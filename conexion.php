@@ -1,0 +1,1 @@
+<?//Conexion a la base de datos$con = mysql_connect ("localhost","naida","naidaserv") or die (mysql_error());$dbname = "naida";?>
