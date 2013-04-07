@@ -12,7 +12,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- 
 -- Base de datos: `naida`
 -- 
-CREATE DATABASE `naida` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+-- CREATE DATABASE `naida` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `naida`;
 
 -- --------------------------------------------------------
@@ -20,6 +20,7 @@ USE `naida`;
 -- 
 -- Estructura de tabla para la tabla `bajas`
 -- 
+DROP TABLE IF EXISTS `bajas`;
 
 CREATE TABLE `bajas` (
   `id` int(11) NOT NULL auto_increment,
@@ -42,6 +43,7 @@ CREATE TABLE `bajas` (
 -- 
 -- Estructura de tabla para la tabla `clientes`
 -- 
+DROP TABLE IF EXISTS `clientes`;
 
 CREATE TABLE `clientes` (
   `id` int(5) NOT NULL auto_increment,
@@ -1046,6 +1048,7 @@ INSERT INTO `clientes` VALUES (1103, '', '', '', '', '', '', '', '', '', '', '',
 -- 
 -- Estructura de tabla para la tabla `color`
 -- 
+DROP TABLE IF EXISTS `color`;
 
 CREATE TABLE `color` (
   `id` int(5) NOT NULL auto_increment,
@@ -1073,6 +1076,7 @@ INSERT INTO `color` VALUES (10, 'Rosa');
 -- 
 -- Estructura de tabla para la tabla `detallesv`
 -- 
+DROP TABLE IF EXISTS `detallesv`;
 
 CREATE TABLE `detallesv` (
   `id` int(5) NOT NULL auto_increment,
@@ -1103,6 +1107,7 @@ INSERT INTO `detallesv` VALUES (15, 13, 2, '115', 1, '115');
 -- 
 -- Estructura de tabla para la tabla `familias`
 -- 
+DROP TABLE IF EXISTS `familias`;
 
 CREATE TABLE `familias` (
   `id` int(5) NOT NULL auto_increment,
@@ -1138,6 +1143,7 @@ INSERT INTO `familias` VALUES (18, 'Familia de pruebas', '');
 -- 
 -- Estructura de tabla para la tabla `gamas`
 -- 
+DROP TABLE IF EXISTS `gamas`;
 
 CREATE TABLE `gamas` (
   `id` int(11) NOT NULL auto_increment,
@@ -1174,6 +1180,7 @@ INSERT INTO `gamas` VALUES (14, '', '', '', '', '', '');
 -- 
 -- Estructura de tabla para la tabla `incidencias`
 -- 
+DROP TABLE IF EXISTS `incidencias`;
 
 CREATE TABLE `incidencias` (
   `id` int(5) NOT NULL auto_increment,
@@ -1194,6 +1201,7 @@ CREATE TABLE `incidencias` (
 -- 
 -- Estructura de tabla para la tabla `menus`
 -- 
+DROP TABLE IF EXISTS `menus`;
 
 CREATE TABLE `menus` (
   `id` int(3) NOT NULL auto_increment,
@@ -1220,6 +1228,7 @@ INSERT INTO `menus` VALUES (9, 'Temas', 'imagenes/temas.png');
 -- 
 -- Estructura de tabla para la tabla `productos`
 -- 
+DROP TABLE IF EXISTS `productos`;
 
 CREATE TABLE `productos` (
   `id` int(5) NOT NULL auto_increment,
@@ -1258,6 +1267,7 @@ INSERT INTO `productos` VALUES (8, '2006-05-25', 6, 2, 10, 2, 4, 2, 1, '', '0621
 -- 
 -- Estructura de tabla para la tabla `proveedores`
 -- 
+DROP TABLE IF EXISTS `proveedores`;
 
 CREATE TABLE `proveedores` (
   `id` int(5) NOT NULL auto_increment,
@@ -1298,6 +1308,7 @@ INSERT INTO `proveedores` VALUES (17, 'Futura Linea', 'Avda. Atlàntida, 130', '
 -- 
 -- Estructura de tabla para la tabla `tallas`
 -- 
+DROP TABLE IF EXISTS `tallas`;
 
 CREATE TABLE `tallas` (
   `id` int(5) NOT NULL auto_increment,
@@ -1325,6 +1336,7 @@ INSERT INTO `tallas` VALUES (10, 'XXL');
 -- 
 -- Estructura de tabla para la tabla `usuarios`
 -- 
+DROP TABLE IF EXISTS `usuarios`;
 
 CREATE TABLE `usuarios` (
   `id` int(5) NOT NULL auto_increment,
@@ -1351,6 +1363,7 @@ INSERT INTO `usuarios` VALUES (22, 'Maria Luisa', 'Rived', 'marialuisa', '25fe03
 -- 
 -- Estructura de tabla para la tabla `ventas`
 -- 
+DROP TABLE IF EXISTS `ventas`;
 
 CREATE TABLE `ventas` (
   `id` int(11) NOT NULL auto_increment,
