@@ -29,3 +29,24 @@
      $lafecha = $mifecha[3] . "/" . $mifecha[2] . "/" . $mifecha[1];
      return $lafecha;
  }
+ 
+ function conecta()
+ {
+	if ( is_null(self::$handle) ) {
+		try {
+			self::$handle = new PDO(
+				self::$dsn,
+                 self::$user,
+                 self::$password,
+                 self::$options
+			);
+		} catch ( PDOException $error ) {
+			die ($error->getMessage());
+		}
+	}
+	return self::$handle;
+     
+     $dsn = 
+     $con = mysql_connect ("localhost","naida","naidaserv") or die (mysql_error());
+     $dbname = "naida";
+ }
