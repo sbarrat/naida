@@ -1,4 +1,4 @@
-<? 
+<?php 
 //Comprobacion del usuario. Ok a 26/09
 require_once("conexion.php");
 $usuario=$_POST[usuario];
@@ -11,7 +11,7 @@ $res = mysql_db_query ($dbname, $sql, $con);
 session_start();
 if($fila = mysql_fetch_array($res))
 {
-	//usuario y contraseña válidos
+	//usuario y contraseÃ±a vÃ¡lidos
     //defino una sesion y guardo datos
 	//session_start();
 	session_register("SESSION");

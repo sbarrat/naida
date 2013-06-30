@@ -1,4 +1,4 @@
-<? //Fichero que va a mostrar el listado de productos en pdf y lo mandara
+<?php //Fichero que va a mostrar el listado de productos en pdf y lo mandara
 //a la impresora
 //Mostrara descripcion, Codigo de barras, Referencia propia y precio
 require_once('conexion.php');
@@ -7,7 +7,7 @@ require('fpdf.php');
 $prod="Select * from productos";
 $rprod=mysql_db_query($dbname,$prod,$con);
 //Fin consulta mas adelante mostramos datos
-//Vamos a definir el tamaño de las etiquetas, idea hacerlo con excel
+//Vamos a definir el tamaÃ±o de las etiquetas, idea hacerlo con excel
 
 $pdf=new FPDF();
 $pdf->AddFont('code3de9','','code39.php');
@@ -31,7 +31,7 @@ if ($cont == 1)
 	//Precio
 	$pdf->SetFont('Arial','B',12);
 	$precio = $mprod[preciov]*1.16;
-	$precio = $precio ."€";
+	$precio = $precio ."â‚¬";
 	$pdf->Cell(60,6,$precio,1,1,'R');
 	//Referencia
 	$pdf->SetFont('Arial','',8);
@@ -54,7 +54,7 @@ if ($cont == 2)
 	$pdf->SetX($posx);
 	$pdf->SetFont('Arial','B',12);
 	$precio = $mprod[preciov]*1.16;
-	$precio = $precio ."€";
+	$precio = $precio ."â‚¬";
 	$pdf->Cell(60,6,$precio,1,1,'R');
 	//Referencia
 	$pdf->SetX($posx);
@@ -79,7 +79,7 @@ if ($cont == 3)
 	$pdf->SetX($posx);
 	$pdf->SetFont('Arial','B',12);
 	$precio = $mprod[preciov]*1.16;
-	$precio = $precio ."€";
+	$precio = $precio ."â‚¬";
 	$pdf->Cell(60,6,$precio,1,1,'R');
 	//Referencia
 	$pdf->SetX($posx);
