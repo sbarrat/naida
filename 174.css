@@ -9,27 +9,20 @@
    techniques you learn from it elsewhere. */
 
 
-
+   /*
 body {
 	text-align:center;
 	padding:0;
 	margin:1px 0 0;
 	font:normal 11px Arial, Helvetica, Sans-serif;
 	color:#666;
-	
-
 }
-
 a {
-	color:#777;
-	
+	color:#777;	
 }
-
 a:hover {
-	color:#A77749;
-	
+	color:#A77749;	
 }
-
 span.ok
 {
 font: bold 14px arial;
@@ -47,7 +40,18 @@ img
 {
 border: 0;
 }
-
+*/
+#loginform {
+    background:rgb(0,0,0);
+    color:rgb(255,255,255);
+    min-height:400px;
+    height:400px;
+}
+.company h1 {
+    font-size:88px;
+    margin-top: 1em;
+    margin-left: 1em;
+}
 #registradora
 {
 font: bold 18px arial;
