@@ -2,15 +2,14 @@ language: php
 php:
   - 5.4
   - 5.3
-  - 5.2
 
 env:
   - DB=mysql
 
 before_script:
-    pyrus install http://phptal.org/latest.tar.gz
-    pear install pear/PHP_CodeSniffer
-    phpenv rehash
+  - pyrus install http://phptal.org/latest.tar.gz
+  - pear install pear/PHP_CodeSniffer
+  - phpenv rehash
 
 script:
-    phpcs --standard=PSR2
+  - phpcs --standard=PSR2
