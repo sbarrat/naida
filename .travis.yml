@@ -11,4 +11,4 @@ before_script:
   - pear install pear/PHP_CodeSniffer
   - phpenv rehash
 
-script: pwd
+script: phpcs --standard=PSR2 /home/travis/build/sbarrat/naida/
