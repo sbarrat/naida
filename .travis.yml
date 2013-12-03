@@ -11,5 +11,4 @@ before_script:
   - pear install pear/PHP_CodeSniffer
   - phpenv rehash
 
-script:
-  - phpcs --standard=PSR2
+script: phpcs --standard=PSR2 TRAVIS_BUILD_DIR
